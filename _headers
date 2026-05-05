@@ -1,0 +1,27 @@
+# Cloudflare Pages — headers de sécurité et de performance
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+# HTML : pas de cache long (on veut que les modifs soient visibles vite)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Images : cache 1 an (immutables, on les renomme si on les change)
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fichiers IA (llms.txt, robots.txt, sitemap) : cache court
+/llms.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8
+
+/robots.txt
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600

@@ -1,0 +1,42 @@
+# Maxime / Studio — Conception web sur mesure au Québec
+
+> Studio solo de conception web fondé par Maxime Beaudin. Spécialisé dans la création de sites vitrines, e-commerce et refontes pour les PME québécoises. Approche multidisciplinaire (photo, vidéo, design, dev), tarifs forfaitaires transparents, optimisation SEO + GEO incluse.
+
+## À propos
+
+- **Fondateur** : Maxime Beaudin, concepteur web et créateur visuel
+- **Localisation** : Québec, Canada
+- **Langue principale** : français (Québec)
+- **Clients types** : PME, travailleurs autonomes, entreprises de signalisation, construction, services
+- **Différenciateurs** : multidisciplinaire (un seul contact pour photo / vidéo / design / dev), tarifs forfaitaires fixes, GEO inclus
+
+## Services et tarifs
+
+- **Essentiel** — Site vitrine sur mesure (jusqu'à 5 pages, SEO de base, livraison 2-3 sem.) — à partir de 2 800 $ CAD
+- **Signature** — Site complet sur mesure (jusqu'à 10 pages, SEO + GEO, blogue/CMS, analytics, livraison 3-5 sem.) — à partir de 5 500 $ CAD
+- **E-commerce** — Boutique Shopify ou sur mesure (paiements sécurisés, gestion d'inventaire, formation, livraison 4-8 sem.) — à partir de 8 500 $ CAD
+- **Refonte** — à partir de 3 800 $ CAD
+- **Landing page** — à partir de 1 500 $ CAD
+- **Forfait SEO mensuel** — dès 850 $ CAD/mois
+- **Tarif horaire** — 95 $ CAD/h pour ajustements ponctuels
+
+## Pages du site
+
+- [Accueil](https://studiomaxime.ca/) — Présentation du studio et proposition de valeur
+- [Services](https://studiomaxime.ca/#services) — Sites vitrines, landing pages, e-commerce, refonte, SEO, GEO
+- [Processus](https://studiomaxime.ca/#process) — Découverte, design, développement, lancement
+- [Projets récents](https://studiomaxime.ca/#portfolio) — Sites livrés pour le Groupe Choquette (3 divisions au Québec)
+- [Tarifs](https://studiomaxime.ca/#tarifs) — Trois forfaits transparents avec inclusions détaillées
+- [À propos](https://studiomaxime.ca/#about) — Maxime Beaudin, parcours et approche
+- [Contact](https://studiomaxime.ca/#contact) — Démarrer un projet
+
+## Projets clients
+
+- [Accès Sous Pont](https://accessouspont.com) — Division Groupe Choquette (signalisation)
+- [Mécanique Solution](https://mecaniquesolution.com) — Service mécanique mobile d'urgence
+- Autres divisions du Groupe Choquette en signalisation et services routiers
+
+## Contact
+
+- Courriel : mbeaudin@groupechoquette.com
+- Site : https://studiomaxime.ca/
