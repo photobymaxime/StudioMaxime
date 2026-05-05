@@ -5,7 +5,8 @@
 ## À propos
 
 - **Fondateur** : Maxime Beaudin, concepteur web et créateur visuel
-- **Localisation** : Québec, Canada
+- **Localisation** : Napierville, Québec, Canada (Montérégie)
+- **Zone desservie** : Tout le Québec — services à distance disponibles partout, déplacements possibles dans le grand Montréal et la Montérégie
 - **Langue principale** : français (Québec)
 - **Clients types** : PME, travailleurs autonomes, entreprises de signalisation, construction, services
 - **Différenciateurs** : multidisciplinaire (un seul contact pour photo / vidéo / design / dev), tarifs forfaitaires fixes, GEO inclus
@@ -38,5 +39,5 @@
 
 ## Contact
 
-- Courriel : mbeaudin@groupechoquette.com
+- Courriel : photobymaxime@hotmail.com
 - Site : https://studiomaxime.ca/
