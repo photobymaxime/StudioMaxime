@@ -13,23 +13,22 @@
 
 ## Services et tarifs
 
-- **Essentiel** — Site vitrine sur mesure (jusqu'à 5 pages, SEO de base, livraison 2-3 sem.) — à partir de 2 800 $ CAD
+- **Essentiel** — Site vitrine sur mesure (jusqu'à 5 pages, SEO de base, livraison 2-3 sem.) — à partir de 1 800 $ CAD
 - **Signature** — Site complet sur mesure (jusqu'à 10 pages, SEO + GEO, blogue/CMS, analytics, livraison 3-5 sem.) — à partir de 5 500 $ CAD
-- **E-commerce** — Boutique Shopify ou sur mesure (paiements sécurisés, gestion d'inventaire, formation, livraison 4-8 sem.) — à partir de 8 500 $ CAD
-- **Refonte** — à partir de 3 800 $ CAD
-- **Landing page** — à partir de 1 500 $ CAD
+- **E-commerce** — Boutique Shopify ou sur mesure (paiements sécurisés, gestion d'inventaire, formation, livraison 4-8 sem.) — à partir de 4 500 $ CAD
+- **Refonte + Optimisation SEO & GEO** — à partir de 2 800 $ CAD
 - **Forfait SEO mensuel** — dès 850 $ CAD/mois
 - **Tarif horaire** — 95 $ CAD/h pour ajustements ponctuels
 
 ## Pages du site
 
 - [Accueil](https://studiomaxime.ca/) — Présentation du studio et proposition de valeur
-- [Services](https://studiomaxime.ca/#services) — Sites vitrines, landing pages, e-commerce, refonte, SEO, GEO
+- [Services](https://studiomaxime.ca/#services) — Sites vitrines, e-commerce, refonte, SEO, GEO
 - [Processus](https://studiomaxime.ca/#process) — Découverte, design, développement, lancement
 - [Projets récents](https://studiomaxime.ca/#portfolio) — Sites livrés pour le Groupe Choquette (3 divisions au Québec)
 - [Tarifs](https://studiomaxime.ca/#tarifs) — Trois forfaits transparents avec inclusions détaillées
 - [À propos](https://studiomaxime.ca/#about) — Maxime Beaudin, parcours et approche
-- [Contact](https://studiomaxime.ca/#contact) — Démarrer un projet
+- [Démarrer un projet](https://studiomaxime.ca/demarrer) — Formulaire de découverte, réservation d'appel, disponibilités, FAQ
 
 ## Projets clients
 

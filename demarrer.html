@@ -3,26 +3,26 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Maxime Beaudin — Conception Web sur mesure au Québec</title>
-<meta name="description" content="Conception web sur mesure pour PME du Québec. Sites rapides (&lt; 2s), optimisés SEO + GEO (ChatGPT, Perplexity), bâtis pour convertir. Forfaits dès 1 800 $." />
+<title>Démarrer un projet — Studio Maxime</title>
+<meta name="description" content="Démarrons votre projet web. Remplissez le formulaire de découverte, planifiez un appel gratuit, recevez une proposition sur mesure. Disponible mai-juin 2026." />
 <meta name="author" content="Maxime Beaudin" />
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-<link rel="canonical" href="https://studiomaxime.ca/" />
+<link rel="canonical" href="https://studiomaxime.ca/demarrer" />
 
 <!-- Open Graph / Facebook / LinkedIn -->
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="fr_CA" />
-<meta property="og:url" content="https://studiomaxime.ca/" />
-<meta property="og:title" content="Maxime Beaudin — Conception Web sur mesure au Québec" />
-<meta property="og:description" content="Sites web rapides, modernes et optimisés pour Google + IA. Forfaits dès 1 800 $. Conçus au Québec." />
+<meta property="og:url" content="https://studiomaxime.ca/demarrer" />
+<meta property="og:title" content="Démarrer un projet — Studio Maxime" />
+<meta property="og:description" content="Trois étapes simples pour démarrer votre projet web : formulaire de découverte, appel gratuit, proposition sur mesure." />
 <meta property="og:image" content="https://studiomaxime.ca/images/og-cover.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Maxime Beaudin — Conception Web sur mesure au Québec" />
-<meta name="twitter:description" content="Sites web rapides, modernes et optimisés pour Google + IA. Forfaits dès 1 800 $." />
+<meta name="twitter:title" content="Démarrer un projet — Studio Maxime" />
+<meta name="twitter:description" content="Trois étapes simples pour démarrer votre projet web." />
 <meta name="twitter:image" content="https://studiomaxime.ca/images/og-cover.jpg" />
 
 <!-- Favicon SVG inline (logo dot orange) -->
@@ -762,330 +762,275 @@
 
 <nav id="nav">
   <div class="nav-inner">
-    <a href="#" class="logo">
+    <a href="/" class="logo">
       <span class="logo-dot"></span>
       Maxime<span style="color: var(--text-dim); font-weight: 400;">/studio</span>
     </a>
     <div class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#process">Processus</a>
-      <a href="#portfolio">Projets</a>
-      <a href="#tarifs">Tarifs</a>
-      <a href="#about">À propos</a>
-      <a href="/demarrer" class="btn btn-primary">Démarrer un projet →</a>
+      <a href="/#services">Services</a>
+      <a href="/#process">Processus</a>
+      <a href="/#portfolio">Projets</a>
+      <a href="/#tarifs">Tarifs</a>
+      <a href="/#about">À propos</a>
+      <a href="/" class="btn btn-ghost">← Accueil</a>
     </div>
   </div>
 </nav>
 
-<section class="hero">
+
+<style>
+  /* Styles spécifiques à la page Démarrer */
+  details.faq-item {
+    cursor: pointer;
+    transition: border-color .3s ease;
+  }
+  details.faq-item summary {
+    list-style: none;
+    position: relative;
+    padding-right: 32px;
+  }
+  details.faq-item summary::-webkit-details-marker { display: none; }
+  details.faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-size: 24px;
+    font-weight: 300;
+    transition: transform .2s ease;
+  }
+  details.faq-item[open] summary::after {
+    content: '–';
+  }
+  details.faq-item:hover { border-color: rgba(255, 91, 46, 0.3); }
+
+  .step-card {
+    counter-increment: step;
+    position: relative;
+  }
+  .step-card .step-num {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 64px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 91, 46, 0.4);
+    line-height: 1;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .availability-card {
+    text-align: left;
+  }
+  .availability-card.now {
+    border-color: rgba(46, 204, 64, 0.4);
+    background:
+      radial-gradient(ellipse at top, rgba(46, 204, 64, 0.08), transparent 60%),
+      var(--bg-card);
+  }
+  .availability-status {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .availability-status .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+  }
+
+  .contact-option {
+    display: block;
+    text-align: center;
+    padding: 40px 28px;
+    cursor: pointer;
+    transition: transform .3s ease, border-color .3s ease;
+  }
+  .contact-option:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 91, 46, 0.3);
+  }
+  .contact-option .service-icon {
+    margin: 0 auto 20px;
+  }
+</style>
+
+<!-- HERO -->
+<section class="hero" style="padding-top: 140px; padding-bottom: 60px;">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="container">
-    <div class="hero-content">
+    <div class="hero-content" style="text-align: center; max-width: 760px; margin: 0 auto;">
       <div class="badge">Disponible pour de nouveaux projets — Mai 2026</div>
       <h1>
-        Des sites web qui<br>
-        <span class="serif gradient-text">convertissent</span> vraiment.
+        Démarrons votre<br>
+        <span class="serif gradient-text">projet</span>.
       </h1>
-      <p class="hero-subtitle">
-        Conception web sur mesure pour entrepreneurs et PME du Québec.
-        Rapide, moderne, optimisé pour Google &amp; ChatGPT — pis bâti pour générer des leads.
+      <p class="hero-subtitle" style="margin-left: auto; margin-right: auto;">
+        Trois étapes simples, aucune pression. On apprend à se connaître, je propose une approche, et seulement si tout fit — on embarque ensemble.
       </p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">Discutons de votre projet →</a>
-        <a href="#portfolio" class="btn btn-ghost">Voir les projets</a>
-      </div>
-
-      <div class="hero-meta">
-        <div class="meta-item">
-          <div class="meta-num">100%</div>
-          <div class="meta-label">Sur mesure</div>
-        </div>
-        <div class="meta-item">
-          <div class="meta-num">&lt; 2s</div>
-          <div class="meta-label">Temps de chargement</div>
-        </div>
-        <div class="meta-item">
-          <div class="meta-num">1-2</div>
-          <div class="meta-label">Semaines de livraison</div>
-        </div>
-        <div class="meta-item">
-          <div class="meta-num">QC</div>
-          <div class="meta-label">Conçu au Québec</div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
 
-<section id="services">
+<!-- ÉTAPES -->
+<section style="padding: 60px 0 80px;">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">Services</div>
-      <h2>Ce que je <span class="serif gradient-text">construis</span> pour vous</h2>
-      <p class="section-desc">Du site vitrine au e-commerce complet, toujours pensé pour vos objectifs d'affaires.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-icon">◆</div>
-        <h3>Sites vitrines</h3>
-        <p>Présence en ligne professionnelle qui inspire confiance dès la première seconde. Idéal pour PME et travailleurs autonomes.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">◇</div>
-        <h3>Landing pages</h3>
-        <p>Pages dédiées à la conversion. Pour vos campagnes pub, lancements ou offres spéciales.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">◈</div>
-        <h3>E-commerce</h3>
-        <p>Boutiques en ligne Shopify ou sur mesure. Paiements sécurisés, gestion d'inventaire, expérience d'achat fluide.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">◉</div>
-        <h3>Refonte de site</h3>
-        <p>Votre site fait dur ? On le modernise sans perdre votre référencement Google ni votre image de marque.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">▲</div>
-        <h3>SEO &amp; performance</h3>
-        <p>Optimisation pour Google, vitesse de chargement, accessibilité. Votre site doit performer, pas juste être beau.</p>
-      </div>
-      <div class="service-card service-card-featured reveal">
-        <div class="service-badge">Nouveau · 2026</div>
-        <div class="service-icon">✦</div>
-        <h3>GEO — IA générative</h3>
-        <p>Optimisation pour <strong>ChatGPT, Perplexity, Claude &amp; Gemini</strong>. Vos clients posent leurs questions aux IA avant Google — votre site doit y figurer comme source.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="process" class="process">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Processus</div>
-      <h2>Simple. <span class="serif gradient-text">Direct.</span> Efficace.</h2>
-      <p class="section-desc">Pas de blabla corporatif. Voici comment on transforme votre vision en site qui livre.</p>
+      <div class="section-tag">Comment ça marche</div>
+      <h2>Trois étapes, <span class="serif gradient-text">zéro stress</span></h2>
+      <p class="section-desc">Du premier clic à la signature, voici exactement ce qui se passe.</p>
     </div>
     <div class="process-grid">
       <div class="step reveal">
-        <h3>Découverte</h3>
-        <p>Un appel pour comprendre votre business, vos clients, vos objectifs. Gratuit, sans engagement.</p>
+        <h3>Formulaire de découverte</h3>
+        <p>15-20 minutes pour me donner tout ce qu'il faut : entreprise, clientèle, objectifs, style visuel, échéancier. Aucune question obligatoire — laissez vide ce que vous ne savez pas.</p>
       </div>
       <div class="step reveal">
-        <h3>Stratégie &amp; design</h3>
-        <p>Grâce au formulaire de découverte rempli en amont, j'arrive avec une vision claire de votre direction artistique et de la stratégie que doit porter le site. Maquettes interactives livrées en 2 à 4 jours.</p>
+        <h3>Appel découverte (gratuit)</h3>
+        <p>20 minutes par téléphone ou vidéo. On clarifie les points importants, je réponds à vos questions, on valide la direction. Pas de pression, pas de vente forcée.</p>
       </div>
       <div class="step reveal">
-        <h3>Développement</h3>
-        <p>Code propre, performance optimisée, prêt pour Google. Aperçu en direct tout au long du projet.</p>
-      </div>
-      <div class="step reveal">
-        <h3>Lancement &amp; suivi</h3>
-        <p>Mise en ligne, formation, et support post-lancement. Votre site grandit avec vous.</p>
+        <h3>Proposition sur mesure</h3>
+        <p>Sous 48h après notre appel, vous recevez une proposition détaillée : scope, livrables, échéancier, prix forfaitaire fixe. À vous de décider à votre rythme.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="portfolio">
+<!-- ÉTAPE 1 — FORMULAIRE -->
+<section style="padding: 80px 0; background: var(--bg-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Projets récents</div>
-      <h2>Du <span class="serif gradient-text">travail</span> dont je suis fier</h2>
-      <p class="section-desc">Refonte complète des sites du <strong style="color: var(--text);">Groupe Choquette</strong> — compagnie de signalisation basée à Napierville.</p>
-    </div>
-    <div class="portfolio-grid">
-      <a href="https://accessouspont.com" target="_blank" rel="noopener" class="project reveal">
-        <div class="project-visual">
-          <img src="images/accessouspont.png" alt="Aperçu du site Accès Sous Pont" loading="lazy" />
-        </div>
-        <div class="project-info">
-          <h3>Accès Sous Pont</h3>
-          <span>Inspection &amp; accès d'ouvrages d'art</span>
-          <span class="project-url">accessouspont.com</span>
-        </div>
-      </a>
-      <a href="https://blocsdebeton.com" target="_blank" rel="noopener" class="project reveal">
-        <div class="project-visual">
-          <img src="images/blocsdebeton.png" alt="Aperçu du site Blocs de Béton" loading="lazy" />
-        </div>
-        <div class="project-info">
-          <h3>Blocs de Béton</h3>
-          <span>Vente, location et signalisation</span>
-          <span class="project-url">blocsdebeton.com</span>
-        </div>
-      </a>
-      <a href="https://mecaniquesolution.com" target="_blank" rel="noopener" class="project reveal">
-        <div class="project-visual">
-          <img src="images/mecaniquesolution.png" alt="Aperçu du site Mécanique Solution" loading="lazy" />
-        </div>
-        <div class="project-info">
-          <h3>Mécanique Solution</h3>
-          <span>Service mécanique mobile d'urgence</span>
-          <span class="project-url">mecaniquesolution.com</span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section id="tarifs" class="pricing">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Tarifs</div>
-      <h2>Des prix <span class="serif gradient-text">honnêtes</span>, pas de surprise</h2>
-      <p class="section-desc">Trois forfaits pour partir, mais chaque projet est cadré sur mesure après notre appel découverte. Pas de frais cachés, pas de drama sur la facture.</p>
-    </div>
-    <div class="pricing-grid">
-
-      <div class="price-card reveal">
-        <div class="price-tier">Essentiel</div>
-        <div class="price-name">Site vitrine</div>
-        <div class="price-tagline">Présence pro pour PME &amp; travailleurs autonomes.</div>
-        <div class="price-amount">
-          <span class="price-prefix">à partir de</span>
-          <span class="price-value">1 800</span>
-          <span class="price-currency">$</span>
-        </div>
-        <div class="price-note">Projet clé en main · Livraison 1 sem.</div>
-        <ul class="price-features">
-          <li>Jusqu'à 5 pages sur mesure</li>
-          <li>100% responsive (mobile, tablette, ordi)</li>
-          <li>SEO de base optimisé pour Google</li>
-          <li>Formulaire de contact &amp; Google Maps</li>
-          <li>Hébergement &amp; nom de domaine configurés</li>
-          <li>1 ronde de révisions incluse</li>
-        </ul>
-        <a href="#contact" class="btn btn-ghost">Choisir Essentiel</a>
-      </div>
-
-      <div class="price-card price-card-featured reveal">
-        <div class="price-badge">★ Plus populaire</div>
-        <div class="price-tier">Signature</div>
-        <div class="price-name">Site sur mesure</div>
-        <div class="price-tagline">Pour PME établies qui veulent dominer leur marché.</div>
-        <div class="price-amount">
-          <span class="price-prefix">à partir de</span>
-          <span class="price-value">5 500</span>
-          <span class="price-currency">$</span>
-        </div>
-        <div class="price-note">Projet complet · Livraison 1-3 sem.</div>
-        <ul class="price-features">
-          <li>Jusqu'à 10 pages avec animations sur mesure</li>
-          <li>Optimisation <strong>SEO + GEO</strong> (ChatGPT, Perplexity)</li>
-          <li>Blogue ou CMS intégré (vous gérez le contenu)</li>
-          <li>Analytics &amp; suivi de conversions configurés</li>
-          <li>Performance &lt; 2s (cœur de Google PageSpeed)</li>
-          <li>2 rondes de révisions · 30 jours de support</li>
-        </ul>
-        <a href="#contact" class="btn btn-primary">Choisir Signature</a>
-      </div>
-
-      <div class="price-card reveal">
-        <div class="price-tier">Boutique</div>
-        <div class="price-name">E-commerce</div>
-        <div class="price-tagline">Vendre en ligne sérieusement, sans casse-tête.</div>
-        <div class="price-amount">
-          <span class="price-prefix">à partir de</span>
-          <span class="price-value">4 500</span>
-          <span class="price-currency">$</span>
-        </div>
-        <div class="price-note">Shopify ou sur mesure · Livraison 1-3 sem.</div>
-        <ul class="price-features">
-          <li>Boutique Shopify avec thème custom</li>
-          <li>Paiements sécurisés (cartes, Apple Pay, etc.)</li>
-          <li>Gestion d'inventaire &amp; expéditions</li>
-          <li>Migration de vos produits incluse</li>
-          <li>Formation pour gérer votre boutique</li>
-          <li>Support post-lancement &amp; documentation</li>
-        </ul>
-        <a href="#contact" class="btn btn-ghost">Discuter du projet</a>
-      </div>
-
-    </div>
-
-    <div class="pricing-why reveal">
-      <div class="pricing-why-header">
-        <h3>Pourquoi ces tarifs ?</h3>
-        <p>Parce qu'un site qui marche, c'est un investissement, pas une dépense. Voici ce que vous achetez vraiment.</p>
-      </div>
-      <div class="pricing-why-grid">
-        <div class="why-item">
-          <div class="why-item-icon">◆</div>
-          <h4>Un seul contact, pas quatre</h4>
-          <p>Photographe, vidéaste, designer, développeur — tout sous le même toit. Vous économisez le temps (et la facture) de coordonner 4 contractants.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-item-icon">◇</div>
-          <h4>Qualité agence, sans les overhead</h4>
-          <p>Même livrable qu'une agence à 5 personnes, mais 30-40% moins cher. Pas de chef de projet à payer, pas de marge corporative, contact direct avec le créateur.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-item-icon">▲</div>
-          <h4>Un actif qui rapporte</h4>
-          <p>Un site qui convertit 3% au lieu de 1%, c'est des milliers de dollars de ventes additionnelles par année. Le projet se rembourse souvent en moins de 6 mois.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-item-icon">✦</div>
-          <h4>Forfait fixe, zéro surprise</h4>
-          <p>Le prix annoncé, c'est le prix payé. Pas de frais cachés, pas de dépassement à la dernière minute. Si le scope change, on en discute avant — pas après.</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="pricing-footnote reveal">
-      Besoin d'autre chose ? <strong>Refonte + Optimisation SEO & GEO</strong> à partir de 2 800 $  · <strong>Forfait SEO mensuel</strong> dès 850 $/mois · <strong>Tarif horaire</strong> 95 $/h pour ajustements ponctuels.
-    </p>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container">
-    <div class="about">
-      <div class="about-visual reveal">
-        <img src="images/maxime.jpg" alt="Maxime Beaudin, concepteur web et créateur visuel" loading="lazy" />
-      </div>
-      <div class="reveal">
-        <div class="section-tag">À propos</div>
-        <h2>Salut, moi c'est <span class="serif gradient-text">Maxime</span>.</h2>
-        <p>
-          Depuis aussi longtemps que je me souvienne, j'ai été passionné par le numérique
-          et tout ce qui touche à l'art visuel. Photographe, vidéaste, designer — j'ai
-          toujours aimé créer des affaires qui se regardent <em>pis</em> qui racontent une histoire.
-        </p>
-        <p>
-          La conception web, c'est l'aboutissement naturel de tout ça : combiner l'œil du
-          créatif, la rigueur du technicien, pis la stratégie du marketeur dans un seul
-          livrable qui travaille pour vous 24/7.
-        </p>
-        <p>
-          Mon obsession : faire des sites qui chargent vite, qui convertissent, et qui
-          restent beaux sur tous les écrans. Pas de drama, pas de surprise sur la facture —
-          juste du travail soigné, par quelqu'un qui aime vraiment ce qu'il fait.
-        </p>
-        <a href="#contact" class="btn btn-primary">Travaillons ensemble →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="cta-section">
-  <div class="container">
-    <div class="cta-card reveal">
-      <div class="section-tag">Contact</div>
-      <h2>Prêt à <span class="serif gradient-text">démarrer</span> ?</h2>
-      <p>
-        Un appel découverte de 20 minutes pour cerner votre projet.<br>
-        Pas de pression, pas de vente forcée — juste une vraie conversation.
+    <div class="cta-card reveal" style="max-width: 800px;">
+      <div class="section-tag" style="text-align: center;">Étape 1 — La plus efficace</div>
+      <h2 style="text-align: center;">Remplissez le formulaire de <span class="serif gradient-text">découverte</span></h2>
+      <p style="text-align: center;">
+        Le moyen le plus rapide pour que j'arrive préparé à notre appel avec une vision claire de votre projet, votre clientèle et votre direction artistique.
       </p>
-      <div class="hero-cta" style="justify-content: center;">
-        <a href="/demarrer" class="btn btn-primary btn-large">JE FONCE →</a>
+      <div style="text-align: center; margin-top: 36px;">
+        <a href="https://forms.gle/REMPLACER-PAR-VOTRE-LIEN" target="_blank" rel="noopener" class="btn btn-primary btn-large">Remplir le formulaire →</a>
+      </div>
+      <p style="text-align: center; margin-top: 20px; font-size: 13px; color: var(--text-dim);">
+        Ouvre dans un nouvel onglet · Aucun compte requis · 15-20 minutes
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ÉTAPE 2 — CONTACT ALTERNATIF -->
+<section style="padding: 100px 0;">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Alternative</div>
+      <h2>Préférez juste <span class="serif gradient-text">jaser</span> ?</h2>
+      <p class="section-desc">Si remplir un formulaire ce n'est pas votre style, contactez-moi directement.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 760px; margin: 0 auto;">
+      <a href="https://calendly.com/REMPLACER-PAR-VOTRE-LIEN" target="_blank" rel="noopener" class="service-card contact-option reveal">
+        <div class="service-icon">◐</div>
+        <h3>Réserver un appel</h3>
+        <p>Choisissez un créneau de 20 min dans mon agenda. Téléphone ou vidéo, à votre choix.</p>
+      </a>
+      <a href="mailto:photobymaxime@hotmail.com" class="service-card contact-option reveal">
+        <div class="service-icon">✉</div>
+        <h3>Écrire un courriel</h3>
+        <p>Réponse sous 24h ouvrables. Idéal pour poser des questions précises avant de s'engager.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DISPONIBILITÉ -->
+<section style="padding: 80px 0; background: var(--bg-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Disponibilité</div>
+      <h2>Mon agenda en <span class="serif gradient-text">transparence</span></h2>
+      <p class="section-desc">Pas de jeux, pas de fausse urgence. Voici ma capacité réelle.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; max-width: 960px; margin: 0 auto;">
+      <div class="service-card availability-card now reveal">
+        <div class="availability-status" style="color: #2ecc40;">
+          <span class="dot" style="background: #2ecc40; box-shadow: 0 0 12px rgba(46, 204, 64, 0.6);"></span>
+          Maintenant
+        </div>
+        <h3>Mai – Juin 2026</h3>
+        <p>Disponible. Démarrage de nouveaux projets sous 1-2 semaines après l'appel découverte.</p>
+      </div>
+      <div class="service-card availability-card reveal">
+        <div class="availability-status" style="color: var(--accent);">
+          <span class="dot" style="background: var(--accent);"></span>
+          Bientôt
+        </div>
+        <h3>Juillet – Août 2026</h3>
+        <p>2-3 places restantes. Réservez tôt pour garantir votre créneau d'été.</p>
+      </div>
+      <div class="service-card availability-card reveal">
+        <div class="availability-status" style="color: var(--text-dim);">
+          <span class="dot" style="background: var(--text-dim);"></span>
+          Sur réservation
+        </div>
+        <h3>Automne 2026</h3>
+        <p>Liste d'attente ouverte. Premier inscrit, premier servi à la rentrée.</p>
       </div>
     </div>
   </div>
 </section>
+
+<!-- FAQ -->
+<section style="padding: 100px 0;">
+  <div class="container" style="max-width: 800px;">
+    <div class="section-header reveal">
+      <div class="section-tag">Questions fréquentes</div>
+      <h2>Avant de <span class="serif gradient-text">commencer</span></h2>
+      <p class="section-desc">Les réponses aux questions que tout le monde se pose.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <details class="service-card faq-item reveal">
+        <summary>Combien de temps pour livrer un site ?</summary>
+        <p style="margin-top: 16px;">Site Essentiel : 2-3 semaines. Signature : 3-5 semaines. E-commerce : 4-8 semaines. Je donne toujours une date ferme dans la proposition initiale, et je m'y tiens.</p>
+      </details>
+      <details class="service-card faq-item reveal">
+        <summary>Quels sont les modes de paiement ?</summary>
+        <p style="margin-top: 16px;">50 % au démarrage du projet, 50 % à la livraison. Virement Interac, virement bancaire ou carte de crédit (frais 2,9 % ajoutés). Reçus officiels avec TPS/TVQ pour les entreprises.</p>
+      </details>
+      <details class="service-card faq-item reveal">
+        <summary>Et si on veut changer d'idée en cours de route ?</summary>
+        <p style="margin-top: 16px;">Le forfait inclut 2 rondes de révisions complètes. Au-delà, on en discute — souvent ça rentre dans le forfait, parfois c'est facturé à mon tarif horaire (95 $/h). Aucune surprise sans validation préalable de votre part.</p>
+      </details>
+      <details class="service-card faq-item reveal">
+        <summary>Le site m'appartient-il à 100 % ?</summary>
+        <p style="margin-top: 16px;">Oui, totalement. Vous êtes propriétaire du nom de domaine, du code source, des images et de tout le contenu. Aucune dépendance à mes services après livraison — vous pouvez transférer le site à un autre développeur en tout temps.</p>
+      </details>
+      <details class="service-card faq-item reveal">
+        <summary>Et après le lancement, qu'est-ce qui se passe ?</summary>
+        <p style="margin-top: 16px;">30 jours de support gratuit après livraison pour les ajustements mineurs. Au-delà : forfait SEO mensuel à partir de 850 $/mois pour le suivi continu, ou tarif horaire 95 $/h selon vos besoins ponctuels. Aucune obligation de continuer avec moi.</p>
+      </details>
+      <details class="service-card faq-item reveal">
+        <summary>Travaillez-vous avec des clients hors Québec ?</summary>
+        <p style="margin-top: 16px;">Oui, partout au Canada francophone et anglophone. Tout se passe à distance (visio, courriel, partage d'écran), donc la géographie n'est pas une contrainte. Je préfère évidemment travailler en français quand c'est possible.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section style="padding: 80px 0 100px; text-align: center;">
+  <div class="container">
+    <div class="cta-card reveal" style="max-width: 720px;">
+      <h2>Prêt à <span class="serif gradient-text">foncer</span> ?</h2>
+      <p>Le formulaire prend 15 minutes. Le pire qui peut arriver, c'est que vous repartiez avec une vision plus claire de votre projet.</p>
+      <div class="hero-cta" style="justify-content: center; margin-top: 28px;">
+        <a href="https://forms.gle/REMPLACER-PAR-VOTRE-LIEN" target="_blank" rel="noopener" class="btn btn-primary btn-large">Remplir le formulaire →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <footer>
   <div class="container">
@@ -1095,10 +1040,10 @@
         Maxime<span style="color: var(--text-dim); font-weight: 400;">/studio</span>
       </div>
       <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#portfolio">Projets</a>
-        <a href="#about">À propos</a>
-        <a href="#contact">Contact</a>
+        <a href="/#services">Services</a>
+        <a href="/#portfolio">Projets</a>
+        <a href="/#about">À propos</a>
+        <a href="/demarrer">Démarrer</a>
       </div>
       <div class="copyright">© 2026 Maxime Beaudin. Conçu au Québec.</div>
     </div>
