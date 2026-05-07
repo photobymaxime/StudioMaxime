@@ -158,6 +158,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Calendly embed assets -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <style>
   :root {
     --bg: #0a0a0b;
@@ -888,7 +892,7 @@
     <div class="process-grid">
       <div class="step reveal">
         <h3>Appel découverte (gratuit)</h3>
-        <p>20 minutes par téléphone ou vidéo. On clarifie les points importants, je réponds à vos questions, on valide la direction. Pas de pression, pas de vente forcée.</p>
+        <p>30 minutes par téléphone ou vidéo. On clarifie les points importants, je réponds à vos questions, on valide la direction. Pas de pression, pas de vente forcée.</p>
       </div>
       <div class="step reveal">
         <h3>Formulaire de découverte</h3>
@@ -902,44 +906,44 @@
   </div>
 </section>
 
-<!-- ÉTAPE 1 — FORMULAIRE -->
+<!-- PREMIER CONTACT -->
+<section style="padding: 100px 0;">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Premier contact</div>
+      <h2>On <span class="serif gradient-text">jase</span> en premier</h2>
+      <p class="section-desc">Choisissez le canal qui vous convient. Pas de pression, pas de vente forcée.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 760px; margin: 0 auto;">
+      <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/photobymaxime/30min'});return false;" class="service-card contact-option reveal">
+        <div class="service-icon">◐</div>
+        <h3>Réserver un appel</h3>
+        <p>Choisissez un créneau de 30 min dans mon agenda. Téléphone ou vidéo, à votre choix.</p>
+      </a>
+      <a href="mailto:photobymaxime@gmail.com" class="service-card contact-option reveal">
+        <div class="service-icon">✉</div>
+        <h3>Écrire un courriel</h3>
+        <p>Réponse sous 24h ouvrables. Idéal pour poser des questions précises avant de s'engager.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRENEZ DE L'AVANCE — FORMULAIRE -->
 <section style="padding: 80px 0; background: var(--bg-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="container">
     <div class="cta-card reveal" style="max-width: 800px;">
-      <div class="section-tag" style="text-align: center;">Étape 2 — Le formulaire</div>
+      <div class="section-tag" style="text-align: center;">Prenez de l'avance</div>
       <h2 style="text-align: center;">Remplissez le formulaire de <span class="serif gradient-text">découverte</span></h2>
       <p style="text-align: center;">
         Le moyen le plus rapide pour que j'arrive préparé à notre appel avec une vision claire de votre projet, votre clientèle et votre direction artistique.
       </p>
       <div style="text-align: center; margin-top: 36px;">
-        <a href="https://forms.gle/REMPLACER-PAR-VOTRE-LIEN" target="_blank" rel="noopener" class="btn btn-primary btn-large">Remplir le formulaire →</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxLjZxWq8w4KefaTy2uo_pzS2-n47zg97WcReWr5RrS-MsmA/viewform" target="_blank" rel="noopener" class="btn btn-primary btn-large">Remplir le formulaire →</a>
       </div>
       <p style="text-align: center; margin-top: 20px; font-size: 13px; color: var(--text-dim);">
         Ouvre dans un nouvel onglet · Aucun compte requis · 15-45 minutes
       </p>
-    </div>
-  </div>
-</section>
-
-<!-- ÉTAPE 2 — CONTACT ALTERNATIF -->
-<section style="padding: 100px 0;">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Alternative</div>
-      <h2>Préférez juste <span class="serif gradient-text">jaser</span> ?</h2>
-      <p class="section-desc">Si remplir un formulaire ce n'est pas votre style, contactez-moi directement.</p>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 760px; margin: 0 auto;">
-      <a href="https://calendly.com/REMPLACER-PAR-VOTRE-LIEN" target="_blank" rel="noopener" class="service-card contact-option reveal">
-        <div class="service-icon">◐</div>
-        <h3>Réserver un appel</h3>
-        <p>Choisissez un créneau de 20 min dans mon agenda. Téléphone ou vidéo, à votre choix.</p>
-      </a>
-      <a href="mailto:photobymaxime@hotmail.com" class="service-card contact-option reveal">
-        <div class="service-icon">✉</div>
-        <h3>Écrire un courriel</h3>
-        <p>Réponse sous 24h ouvrables. Idéal pour poser des questions précises avant de s'engager.</p>
-      </a>
     </div>
   </div>
 </section>
@@ -1025,7 +1029,7 @@
       <h2>Prêt à <span class="serif gradient-text">foncer</span> ?</h2>
       <p>Le formulaire prend 15-45 minutes. Le pire qui peut arriver, c'est que vous repartiez avec une vision plus claire de votre projet.</p>
       <div class="hero-cta" style="justify-content: center; margin-top: 28px;">
-        <a href="https://forms.gle/REMPLACER-PAR-VOTRE-LIEN" target="_blank" rel="noopener" class="btn btn-primary btn-large">Remplir le formulaire →</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxLjZxWq8w4KefaTy2uo_pzS2-n47zg97WcReWr5RrS-MsmA/viewform" target="_blank" rel="noopener" class="btn btn-primary btn-large">Remplir le formulaire →</a>
       </div>
     </div>
   </div>
