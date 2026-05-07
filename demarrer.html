@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Démarrer un projet — Studio Maxime</title>
-<meta name="description" content="Démarrons votre projet web. Remplissez le formulaire de découverte, planifiez un appel gratuit, recevez une proposition sur mesure. Disponible mai-juin 2026." />
+<meta name="description" content="Démarrez votre projet web avec Studio Maxime en 3 étapes simples : appel découverte gratuit (30 min), formulaire de cadrage (15-45 min), proposition forfaitaire transparente sous 48h. Disponible mai-juin 2026 pour PME du Québec." />
 <meta name="author" content="Maxime Beaudin" />
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 <link rel="canonical" href="https://studiomaxime.ca/demarrer" />
@@ -25,8 +25,11 @@
 <meta name="twitter:description" content="Trois étapes simples pour démarrer votre projet web." />
 <meta name="twitter:image" content="https://studiomaxime.ca/images/og-cover.jpg" />
 
-<!-- Favicon SVG inline (logo dot orange) -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff5b2e'/%3E%3Cstop offset='1' stop-color='%23ffb86b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0b'/%3E%3Ccircle cx='32' cy='32' r='14' fill='url(%23g)'/%3E%3C/svg%3E" />
+<!-- Favicon + icônes -->
+<link rel="icon" type="image/svg+xml" href="/icon.svg" />
+<link rel="apple-touch-icon" href="/icon.svg" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#0a0a0b" />
 
 <!-- JSON-LD Schema.org : ProfessionalService + Person + WebSite -->
 <script type="application/ld+json">
@@ -77,6 +80,9 @@
       "founder": {
         "@id": "https://studiomaxime.ca/#person"
       },
+      "sameAs": [
+        "https://www.instagram.com/studiomaxime.web"
+      ],
       "offers": [
         {
           "@type": "Offer",
@@ -129,9 +135,13 @@
       "jobTitle": "Concepteur web et créateur visuel",
       "url": "https://studiomaxime.ca/",
       "image": "https://studiomaxime.ca/images/maxime.jpg",
+      "email": "photobymaxime@gmail.com",
       "worksFor": {
         "@id": "https://studiomaxime.ca/#business"
       },
+      "sameAs": [
+        "https://www.instagram.com/studiomaxime.web"
+      ],
       "knowsAbout": [
         "Conception web",
         "SEO",
@@ -150,6 +160,78 @@
       "publisher": {
         "@id": "https://studiomaxime.ca/#business"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://studiomaxime.ca/demarrer#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://studiomaxime.ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Démarrer un projet",
+          "item": "https://studiomaxime.ca/demarrer"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://studiomaxime.ca/demarrer#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien de temps pour livrer un site ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Site Essentiel : 2-3 semaines. Signature : 3-5 semaines. E-commerce : 4-8 semaines. Studio Maxime donne toujours une date ferme dans la proposition initiale et s'y tient."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels sont les modes de paiement ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "50 % au démarrage du projet, 50 % à la livraison. Virement Interac, virement bancaire ou carte de crédit (frais 2,9 % ajoutés). Reçus officiels avec TPS/TVQ pour les entreprises."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Et si on veut changer d'idée en cours de route ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le forfait inclut 2 rondes de révisions complètes. Au-delà, on en discute — souvent ça rentre dans le forfait, parfois c'est facturé au tarif horaire (95 $/h). Aucune surprise sans validation préalable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le site m'appartient-il à 100 % ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, totalement. Vous êtes propriétaire du nom de domaine, du code source, des images et de tout le contenu. Aucune dépendance après livraison — vous pouvez transférer le site à un autre développeur en tout temps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Et après le lancement, qu'est-ce qui se passe ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "30 jours de support gratuit après livraison pour les ajustements mineurs. Au-delà : forfait SEO mensuel à partir de 850 $/mois pour le suivi continu, ou tarif horaire 95 $/h selon vos besoins ponctuels. Aucune obligation de continuer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Travaillez-vous avec des clients hors Québec ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, partout au Canada francophone et anglophone. Tout se passe à distance (visio, courriel, partage d'écran), donc la géographie n'est pas une contrainte. Studio Maxime préfère travailler en français quand c'est possible."
+          }
+        }
+      ]
     }
   ]
 }
@@ -760,14 +842,50 @@
     transition: opacity .8s ease, transform .8s ease;
   }
   .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* A11Y: focus visible clavier */
+  a:focus-visible, button:focus-visible, summary:focus-visible, details:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  /* A11Y: skip-to-content */
+  .skip-to-content {
+    position: absolute;
+    top: -48px;
+    left: 12px;
+    background: var(--accent);
+    color: #0a0a0b;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 1000;
+    transition: top .2s ease;
+  }
+  .skip-to-content:focus { top: 12px; }
+
+  /* A11Y: respect prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+  }
 </style>
 </head>
 <body>
 
-<nav id="nav">
+<a href="#main" class="skip-to-content">Aller au contenu principal</a>
+
+<nav id="nav" aria-label="Navigation principale">
   <div class="nav-inner">
-    <a href="/" class="logo">
-      <span class="logo-dot"></span>
+    <a href="/" class="logo" aria-label="Studio Maxime — accueil">
+      <span class="logo-dot" aria-hidden="true"></span>
       Maxime<span style="color: var(--text-dim); font-weight: 400;">/studio</span>
     </a>
     <div class="nav-links">
@@ -863,6 +981,8 @@
   }
 </style>
 
+<main id="main">
+
 <!-- HERO -->
 <section class="hero" style="padding-top: 140px; padding-bottom: 60px;">
   <div class="hero-bg"></div>
@@ -939,7 +1059,7 @@
         Le moyen le plus rapide pour que j'arrive préparé à notre appel avec une vision claire de votre projet, votre clientèle et votre direction artistique.
       </p>
       <div style="text-align: center; margin-top: 36px;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxLjZxWq8w4KefaTy2uo_pzS2-n47zg97WcReWr5RrS-MsmA/viewform" target="_blank" rel="noopener" class="btn btn-primary btn-large">Remplir le formulaire →</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxLjZxWq8w4KefaTy2uo_pzS2-n47zg97WcReWr5RrS-MsmA/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Remplir le formulaire →</a>
       </div>
       <p style="text-align: center; margin-top: 20px; font-size: 13px; color: var(--text-dim);">
         Ouvre dans un nouvel onglet · Aucun compte requis · 15-45 minutes
@@ -1029,18 +1149,20 @@
       <h2>Prêt à <span class="serif gradient-text">foncer</span> ?</h2>
       <p>Le formulaire prend 15-45 minutes. Le pire qui peut arriver, c'est que vous repartiez avec une vision plus claire de votre projet.</p>
       <div class="hero-cta" style="justify-content: center; margin-top: 28px;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxLjZxWq8w4KefaTy2uo_pzS2-n47zg97WcReWr5RrS-MsmA/viewform" target="_blank" rel="noopener" class="btn btn-primary btn-large">Remplir le formulaire →</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxLjZxWq8w4KefaTy2uo_pzS2-n47zg97WcReWr5RrS-MsmA/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Remplir le formulaire →</a>
       </div>
     </div>
   </div>
 </section>
 
 
+</main>
+
 <footer>
   <div class="container">
     <div class="footer-inner">
       <div class="logo">
-        <span class="logo-dot"></span>
+        <span class="logo-dot" aria-hidden="true"></span>
         Maxime<span style="color: var(--text-dim); font-weight: 400;">/studio</span>
       </div>
       <div class="footer-links">
@@ -1048,8 +1170,14 @@
         <a href="/#portfolio">Projets</a>
         <a href="/#about">À propos</a>
         <a href="/demarrer">Démarrer</a>
+        <a href="https://www.instagram.com/studiomaxime.web" target="_blank" rel="noopener noreferrer" aria-label="Instagram Studio Maxime">Instagram</a>
       </div>
-      <div class="copyright">© 2026 Maxime Beaudin. Conçu au Québec.</div>
+      <div class="copyright">
+        © 2026 Maxime Beaudin · NEQ 2281658510 · Conçu au Québec<br>
+        <a href="/politique-confidentialite" style="color: var(--text-dim); text-decoration: none; margin-right: 12px;">Confidentialité</a>
+        <a href="/conditions" style="color: var(--text-dim); text-decoration: none; margin-right: 12px;">Conditions</a>
+        <a href="/mentions-legales" style="color: var(--text-dim); text-decoration: none;">Mentions légales</a>
+      </div>
     </div>
   </div>
 </footer>

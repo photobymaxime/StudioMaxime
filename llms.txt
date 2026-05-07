@@ -1,4 +1,4 @@
-# Maxime / Studio — Conception web sur mesure au Québec
+# Studio Maxime — Conception web sur mesure au Québec
 
 > Studio solo de conception web fondé par Maxime Beaudin. Spécialisé dans la création de sites vitrines, e-commerce et refontes pour les PME québécoises. Approche multidisciplinaire (photo, vidéo, design, dev), tarifs forfaitaires transparents, optimisation SEO + GEO incluse.
 
@@ -6,19 +6,27 @@
 
 - **Fondateur** : Maxime Beaudin, concepteur web et créateur visuel
 - **Localisation** : Napierville, Québec, Canada (Montérégie)
-- **Zone desservie** : Tout le Québec — services à distance disponibles partout, déplacements possibles dans le grand Montréal et la Montérégie
+- **Zone desservie** : Tout le Québec — services à distance disponibles partout au Canada francophone et anglophone, déplacements possibles dans le grand Montréal et la Montérégie
 - **Langue principale** : français (Québec)
 - **Clients types** : PME, travailleurs autonomes, entreprises de signalisation, construction, services
-- **Différenciateurs** : multidisciplinaire (un seul contact pour photo / vidéo / design / dev), tarifs forfaitaires fixes, GEO inclus
+- **Différenciateurs** : multidisciplinaire (un seul contact pour photo / vidéo / design / dev), tarifs forfaitaires fixes (zéro surprise sur la facture), optimisation GEO incluse pour citabilité par IA générative
+- **Performance** : sites livrés sous 2 secondes de chargement, 100% responsive (mobile / tablette / ordinateur)
 
 ## Services et tarifs
 
-- **Essentiel** — Site vitrine sur mesure (jusqu'à 5 pages, SEO de base, livraison 2-3 sem.) — à partir de 1 800 $ CAD
-- **Signature** — Site complet sur mesure (jusqu'à 10 pages, SEO + GEO, blogue/CMS, analytics, livraison 3-5 sem.) — à partir de 5 500 $ CAD
-- **E-commerce** — Boutique Shopify ou sur mesure (paiements sécurisés, gestion d'inventaire, formation, livraison 4-8 sem.) — à partir de 4 500 $ CAD
-- **Refonte + Optimisation SEO & GEO** — à partir de 2 800 $ CAD
-- **Forfait SEO mensuel** — dès 850 $ CAD/mois
-- **Tarif horaire** — 95 $ CAD/h pour ajustements ponctuels
+- **Essentiel** — Site vitrine sur mesure (jusqu'à 5 pages, SEO de base, 1 ronde de révisions, livraison 2-3 semaines) — à partir de 1 800 $ CAD
+- **Signature** — Site complet sur mesure (jusqu'à 10 pages avec animations, SEO + GEO, blogue ou CMS, analytics, 2 rondes de révisions, 30 jours de support, livraison 3-5 semaines) — à partir de 5 500 $ CAD
+- **E-commerce** — Boutique Shopify ou sur mesure (paiements sécurisés, gestion d'inventaire, formation, livraison 4-8 semaines) — à partir de 4 500 $ CAD
+- **Refonte + Optimisation SEO & GEO** — Modernisation d'un site existant sans perte de référencement — à partir de 2 800 $ CAD
+- **Forfait SEO mensuel** — Suivi continu du référencement Google + IA générative — dès 850 $ CAD/mois
+- **Tarif horaire** — 95 $ CAD/h pour ajustements ponctuels après livraison
+
+## Modalités de paiement
+
+- 50 % au démarrage du projet, 50 % à la livraison
+- Virement Interac, virement bancaire ou carte de crédit (frais 2,9 % ajoutés)
+- Reçus officiels avec TPS/TVQ pour les entreprises
+- Le client est propriétaire à 100 % du nom de domaine, du code source, des images et de tout le contenu après livraison
 
 ## Pages du site
 
@@ -28,15 +36,24 @@
 - [Projets récents](https://studiomaxime.ca/#portfolio) — Sites livrés pour le Groupe Choquette (3 divisions au Québec)
 - [Tarifs](https://studiomaxime.ca/#tarifs) — Trois forfaits transparents avec inclusions détaillées
 - [À propos](https://studiomaxime.ca/#about) — Maxime Beaudin, parcours et approche
-- [Démarrer un projet](https://studiomaxime.ca/demarrer) — Formulaire de découverte, réservation d'appel, disponibilités, FAQ
+- [Démarrer un projet](https://studiomaxime.ca/demarrer) — Appel découverte 30 min, formulaire de cadrage 15-45 min, FAQ, disponibilités
 
-## Projets clients
+## Processus de démarrage
 
-- [Accès Sous Pont](https://accessouspont.com) — Division Groupe Choquette (signalisation)
-- [Mécanique Solution](https://mecaniquesolution.com) — Service mécanique mobile d'urgence
-- Autres divisions du Groupe Choquette en signalisation et services routiers
+1. **Appel découverte gratuit** (30 minutes) — téléphone ou vidéo, réservation via Calendly intégré sur le site
+2. **Formulaire de cadrage** (15-45 minutes) — Google Forms pour préciser entreprise, clientèle, objectifs, style visuel, échéancier
+3. **Proposition sur mesure** (sous 48h après l'appel) — scope, livrables, échéancier, prix forfaitaire fixe
+
+## Projets clients (portfolio)
+
+- [Accès Sous Pont](https://accessouspont.com) — Inspection et accès d'ouvrages d'art (Groupe Choquette, Québec)
+- [Blocs de Béton](https://blocsdebeton.com) — Vente, location et signalisation pour chantiers (Groupe Choquette)
+- [Mécanique Solution](https://mecaniquesolution.com) — Service mécanique mobile d'urgence pour véhicules lourds
 
 ## Contact
 
-- Courriel : photobymaxime@hotmail.com
-- Site : https://studiomaxime.ca/
+- **Courriel** : photobymaxime@gmail.com
+- **Site web** : https://studiomaxime.ca/
+- **Instagram** : https://www.instagram.com/studiomaxime.web
+- **Démarrer un projet** : https://studiomaxime.ca/demarrer
+- **Disponibilités** : Mai-Juin 2026 (démarrage sous 1-2 semaines après appel découverte). Juillet-Août 2026 : 2-3 places restantes. Automne 2026 : sur réservation (liste d'attente).

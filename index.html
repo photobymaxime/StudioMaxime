@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Maxime Beaudin — Conception Web sur mesure au Québec</title>
-<meta name="description" content="Conception web sur mesure pour PME du Québec. Sites rapides (&lt; 2s), optimisés SEO + GEO (ChatGPT, Perplexity), bâtis pour convertir. Forfaits dès 1 800 $." />
+<meta name="description" content="Studio Maxime — conception web sur mesure pour PME du Québec. Sites rapides (&lt; 2s), optimisés Google + IA générative (ChatGPT, Perplexity, Claude), bâtis pour convertir. Forfaits transparents dès 1 800 $ CAD." />
 <meta name="author" content="Maxime Beaudin" />
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 <link rel="canonical" href="https://studiomaxime.ca/" />
@@ -25,8 +25,11 @@
 <meta name="twitter:description" content="Sites web rapides, modernes et optimisés pour Google + IA. Forfaits dès 1 800 $." />
 <meta name="twitter:image" content="https://studiomaxime.ca/images/og-cover.jpg" />
 
-<!-- Favicon SVG inline (logo dot orange) -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff5b2e'/%3E%3Cstop offset='1' stop-color='%23ffb86b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0b'/%3E%3Ccircle cx='32' cy='32' r='14' fill='url(%23g)'/%3E%3C/svg%3E" />
+<!-- Favicon + icônes -->
+<link rel="icon" type="image/svg+xml" href="/icon.svg" />
+<link rel="apple-touch-icon" href="/icon.svg" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#0a0a0b" />
 
 <!-- JSON-LD Schema.org : ProfessionalService + Person + WebSite -->
 <script type="application/ld+json">
@@ -77,6 +80,9 @@
       "founder": {
         "@id": "https://studiomaxime.ca/#person"
       },
+      "sameAs": [
+        "https://www.instagram.com/studiomaxime.web"
+      ],
       "offers": [
         {
           "@type": "Offer",
@@ -129,9 +135,13 @@
       "jobTitle": "Concepteur web et créateur visuel",
       "url": "https://studiomaxime.ca/",
       "image": "https://studiomaxime.ca/images/maxime.jpg",
+      "email": "photobymaxime@gmail.com",
       "worksFor": {
         "@id": "https://studiomaxime.ca/#business"
       },
+      "sameAs": [
+        "https://www.instagram.com/studiomaxime.web"
+      ],
       "knowsAbout": [
         "Conception web",
         "SEO",
@@ -460,6 +470,10 @@
     overflow: hidden;
     background: var(--bg-card);
   }
+  .project-visual picture,
+  .about-visual picture {
+    display: contents;
+  }
   .project-visual img {
     width: 100%; height: 100%;
     object-fit: cover;
@@ -756,14 +770,50 @@
     transition: opacity .8s ease, transform .8s ease;
   }
   .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* A11Y: focus visible clavier */
+  a:focus-visible, button:focus-visible, summary:focus-visible, details:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  /* A11Y: skip-to-content */
+  .skip-to-content {
+    position: absolute;
+    top: -48px;
+    left: 12px;
+    background: var(--accent);
+    color: #0a0a0b;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 1000;
+    transition: top .2s ease;
+  }
+  .skip-to-content:focus { top: 12px; }
+
+  /* A11Y: respect prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+  }
 </style>
 </head>
 <body>
 
-<nav id="nav">
+<a href="#main" class="skip-to-content">Aller au contenu principal</a>
+
+<nav id="nav" aria-label="Navigation principale">
   <div class="nav-inner">
-    <a href="#" class="logo">
-      <span class="logo-dot"></span>
+    <a href="/" class="logo" aria-label="Studio Maxime — accueil">
+      <span class="logo-dot" aria-hidden="true"></span>
       Maxime<span style="color: var(--text-dim); font-weight: 400;">/studio</span>
     </a>
     <div class="nav-links">
@@ -776,6 +826,8 @@
     </div>
   </div>
 </nav>
+
+<main id="main">
 
 <section class="hero">
   <div class="hero-bg"></div>
@@ -897,9 +949,12 @@
       <p class="section-desc">Refonte complète des sites du <strong style="color: var(--text);">Groupe Choquette</strong> — compagnie de signalisation basée à Napierville.</p>
     </div>
     <div class="portfolio-grid">
-      <a href="https://accessouspont.com" target="_blank" rel="noopener" class="project reveal">
+      <a href="https://accessouspont.com" target="_blank" rel="noopener noreferrer" class="project reveal">
         <div class="project-visual">
-          <img src="images/accessouspont.png" alt="Aperçu du site Accès Sous Pont" loading="lazy" />
+          <picture>
+            <source srcset="images/accessouspont.webp" type="image/webp">
+            <img src="images/accessouspont-opt.png" alt="Capture d'écran du site Accès Sous Pont, division du Groupe Choquette spécialisée en inspection et accès d'ouvrages d'art au Québec" loading="lazy" width="1280" height="800" />
+          </picture>
         </div>
         <div class="project-info">
           <h3>Accès Sous Pont</h3>
@@ -907,9 +962,12 @@
           <span class="project-url">accessouspont.com</span>
         </div>
       </a>
-      <a href="https://blocsdebeton.com" target="_blank" rel="noopener" class="project reveal">
+      <a href="https://blocsdebeton.com" target="_blank" rel="noopener noreferrer" class="project reveal">
         <div class="project-visual">
-          <img src="images/blocsdebeton.png" alt="Aperçu du site Blocs de Béton" loading="lazy" />
+          <picture>
+            <source srcset="images/blocsdebeton.webp" type="image/webp">
+            <img src="images/blocsdebeton-opt.png" alt="Capture d'écran du site Blocs de Béton, vente, location et signalisation pour chantiers de construction au Québec" loading="lazy" width="1280" height="800" />
+          </picture>
         </div>
         <div class="project-info">
           <h3>Blocs de Béton</h3>
@@ -917,9 +975,12 @@
           <span class="project-url">blocsdebeton.com</span>
         </div>
       </a>
-      <a href="https://mecaniquesolution.com" target="_blank" rel="noopener" class="project reveal">
+      <a href="https://mecaniquesolution.com" target="_blank" rel="noopener noreferrer" class="project reveal">
         <div class="project-visual">
-          <img src="images/mecaniquesolution.png" alt="Aperçu du site Mécanique Solution" loading="lazy" />
+          <picture>
+            <source srcset="images/mecaniquesolution.webp" type="image/webp">
+            <img src="images/mecaniquesolution-opt.png" alt="Capture d'écran du site Mécanique Solution, service de mécanique mobile d'urgence pour véhicules lourds au Québec" loading="lazy" width="1280" height="800" />
+          </picture>
         </div>
         <div class="project-info">
           <h3>Mécanique Solution</h3>
@@ -1045,7 +1106,10 @@
   <div class="container">
     <div class="about">
       <div class="about-visual reveal">
-        <img src="images/maxime.jpg" alt="Maxime Beaudin, concepteur web et créateur visuel" loading="lazy" />
+        <picture>
+          <source srcset="images/maxime.webp" type="image/webp">
+          <img src="images/maxime-opt.jpg" alt="Portrait de Maxime Beaudin, concepteur web et créateur visuel, fondateur de Studio Maxime à Napierville au Québec" loading="lazy" width="800" height="1000" fetchpriority="low" />
+        </picture>
       </div>
       <div class="reveal">
         <div class="section-tag">À propos</div>
@@ -1087,11 +1151,13 @@
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="container">
     <div class="footer-inner">
       <div class="logo">
-        <span class="logo-dot"></span>
+        <span class="logo-dot" aria-hidden="true"></span>
         Maxime<span style="color: var(--text-dim); font-weight: 400;">/studio</span>
       </div>
       <div class="footer-links">
@@ -1099,8 +1165,14 @@
         <a href="#portfolio">Projets</a>
         <a href="#about">À propos</a>
         <a href="#contact">Contact</a>
+        <a href="https://www.instagram.com/studiomaxime.web" target="_blank" rel="noopener noreferrer" aria-label="Instagram Studio Maxime">Instagram</a>
       </div>
-      <div class="copyright">© 2026 Maxime Beaudin. Conçu au Québec.</div>
+      <div class="copyright">
+        © 2026 Maxime Beaudin · NEQ 2281658510 · Conçu au Québec<br>
+        <a href="/politique-confidentialite" style="color: var(--text-dim); text-decoration: none; margin-right: 12px;">Confidentialité</a>
+        <a href="/conditions" style="color: var(--text-dim); text-decoration: none; margin-right: 12px;">Conditions</a>
+        <a href="/mentions-legales" style="color: var(--text-dim); text-decoration: none;">Mentions légales</a>
+      </div>
     </div>
   </div>
 </footer>

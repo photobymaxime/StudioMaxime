@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page introuvable (404) — Studio Maxime</title>
+<meta name="description" content="Cette page n'existe pas ou a été déplacée. Retournez à l'accueil de Studio Maxime ou démarrez un nouveau projet web." />
+<meta name="robots" content="noindex, follow" />
+
+<link rel="icon" type="image/svg+xml" href="/icon.svg" />
+<link rel="apple-touch-icon" href="/icon.svg" />
+<meta name="theme-color" content="#0a0a0b" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0a0a0b;
+    --bg-card: #15151a;
+    --border: #26262e;
+    --text: #f5f5f7;
+    --text-dim: #9a9aa3;
+    --accent: #ff5b2e;
+    --gradient: linear-gradient(135deg, #ff5b2e 0%, #ffb86b 100%);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    overflow-x: hidden;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 40% at 50% 30%, rgba(255, 91, 46, 0.18), transparent 70%),
+      radial-gradient(ellipse 40% 30% at 80% 70%, rgba(255, 184, 107, 0.08), transparent 70%);
+    pointer-events: none;
+  }
+  .wrap {
+    position: relative;
+    text-align: center;
+    max-width: 620px;
+  }
+  .serif { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; }
+  .gradient-text {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .code {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: clamp(120px, 22vw, 220px);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+  p {
+    color: var(--text-dim);
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 36px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btns {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    transition: transform .2s ease, box-shadow .3s ease;
+  }
+  .btn-primary {
+    background: var(--gradient);
+    color: #0a0a0b;
+    box-shadow: 0 8px 30px rgba(255, 91, 46, 0.3);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(255, 91, 46, 0.5); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .btn-ghost:hover { border-color: var(--text-dim); }
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="code"><span class="gradient-text">404</span></div>
+    <h1>Cette page <span class="serif gradient-text">n'existe pas</span>.</h1>
+    <p>Soit l'URL est mal tapée, soit la page a été déplacée. Pas de drama — voici par où repartir.</p>
+    <div class="btns">
+      <a href="/" class="btn btn-primary">Retour à l'accueil →</a>
+      <a href="/demarrer" class="btn btn-ghost">Démarrer un projet</a>
+    </div>
+  </main>
+</body>
+</html>
